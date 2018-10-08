@@ -62,7 +62,7 @@ namespace spec
 			int a = 2;
 			int b = 5;
 			int actual = sum(a, b);
-			int expected = 5;
+			int expected = 7;
 			Assert::AreEqual(expected, actual, L"Sum testcase 1 failed", 1, 2);
 		}
 
