@@ -33,47 +33,20 @@ namespace spec
 			}
 		};
 
-#pragma region Additional test attributes
-		//
-		//You can use the following additional attributes as you write your tests:
-		//
-		//Use ClassInitialize to run code before running the first test in the class
-		//[ClassInitialize()]
-		//static void MyClassInitialize(TestContext^ testContext) {};
-		//
-		//Use ClassCleanup to run code after all tests in a class have run
-		//[ClassCleanup()]
-		//static void MyClassCleanup() {};
-		//
-		//Use TestInitialize to run code before running each test
-		//[TestInitialize()]
-		//void MyTestInitialize() {};
-		//
-		//Use TestCleanup to run code after each test has run
-		//[TestCleanup()]
-		//void MyTestCleanup() {};
-		//
-#pragma endregion 
-
-
 		[TestMethod, Timeout(3000)]
 		void Sum_Test1()
 		{
-			int a = 2;
-			int b = 5;
-			int actual = sum(a, b);
-			int expected = 7;
-			Assert::AreEqual(expected, actual, L"Sum testcase 1 failed", 1, 2);
+			int actual = sum(2, 3);
+			int expected = 5;
+			Assert::AreEqual(expected, actual, L"Sum(2, 3) failed", 1, 2);
 		}
 
 		[TestMethod, Timeout(3000)]
 		void Sum_Test2()
 		{
-			int a = -2;
-			int b = 5;
-			int actual = sum(a, b);
+			int actual = sum(-2, 5);
 			int expected = 3;
-			Assert::AreEqual(expected, actual, L"Sum testcase 2 failed", 1, 2);
+			Assert::AreEqual(expected, actual, L"Sum(-2, 5) failed", 1, 2);
 		}
 	};
 }

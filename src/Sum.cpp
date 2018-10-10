@@ -1,17 +1,13 @@
 /*
-OVERVIEW: Write a function which takes two numbers as input and returns sum of two numbers.
+OVERVIEW: Write a function to find sum of two integers.
 E.g.: sum(2, 3) returns 5.
 
-INPUTS: Two numbers a, b;
+INPUTS: Two integers number1 and number2.
 
-OUTPUT: sum of the numbers a, b.
-
-ERROR CASES:
-
-NOTES:
+OUTPUT: Sum of the integers number1 and number2.
 */
 
-int sum(int a, int b)
+int sum(int number1, int number2)
 {
 	return 0;
 }
